@@ -13,6 +13,10 @@ Applying CNNs to image classification or other computer vision problems.
 
 Demonstrations of CNN architectures and their implementation.
 
+Performance:
+Train loss: 0.32311 | Train accuracy: 88.25%
+Test loss: 0.32619 | Test accuracy: 88.14%
+
 2. Mnist.ipynb
 This notebook is dedicated to working with the MNIST dataset, a classic benchmark for image classification. It includes:
 
@@ -21,6 +25,11 @@ Loading and preparing the MNIST dataset.
 Implementing and training a model (likely a neural network) to classify handwritten digits.
 
 Evaluating the model's performance on the MNIST dataset.
+
+Performance:
+Train Loss = 0.0006, Train Acc = 0.9994, Test Acc = 0.9753
+
+
 
 3. Non linear dataset.ipynb
 This notebook explores machine learning models designed for non-linear datasets. Key aspects include:
