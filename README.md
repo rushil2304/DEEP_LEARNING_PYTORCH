@@ -51,30 +51,28 @@ To run these notebooks, you'll need to have Python and Jupyter installed, along 
 
 Clone the repository:
 
-Bash
+```bash
+    git clone <repository_url>
+    cd <repository_name>
+```
 
-git clone <repository_url>
-cd <repository_name>
-Create a virtual environment (recommended):
+B
 
-Bash
+```bash
+    # Create a virtual environment
+    python -m venv venv
 
-python -m venv venv
-source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+    # Activate the virtual environment (depending on your OS)
+    source venv/bin/activate   # Linux/macOS
+    venv\Scripts\activate.bat  # Windows (for cmd)
+    venv\Scripts\Activate.ps1  # Windows (for PowerShell)
+```
 Install the required libraries:
 While a requirements.txt is not provided, based on the notebooks, you will likely need:
 
-Bash
+```bash
 
 pip install torch torchvision scikit-learn matplotlib pandas
 For Google Colab specific functionalities, no local installation is needed as it's a cloud-based environment.
+```
 
-Launch Jupyter Notebook:
-
-Bash
-
-jupyter notebook
-This will open a browser window where you can navigate to and open the .ipynb files.
-
-Usage
-Each notebook is designed to be run independently. Open them in Jupyter Notebook or Google Colab and execute the cells sequentially to understand the concepts and see the models in action.
