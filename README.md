@@ -1,5 +1,5 @@
 
-Machine Learning and Deep Learning Notebooks
+### Machine Learning and Deep Learning Notebooks
 
 This repository contains a collection of Jupyter notebooks exploring various machine learning and deep learning concepts, primarily using PyTorch and scikit-learn.
 
