@@ -55,6 +55,16 @@ Saving and loading trained models.
 
 It demonstrates basic linear regression setup with known parameters, data creation, and train/test splitting.
 
+### Key Functions Explained:
+
+Dataloader (Data Handling):
+
+In pytorch Model Practice.ipynb, data is prepared by creating a simple linear dataset and then splitting it into training and testing sets (X_train, y_train, X_test, y_test) using an 80/20 ratio. This process effectively simulates a dataset for the model to learn from and evaluate on. While a formal torch.utils.data.DataLoader is not explicitly used, the data is structured and prepared in a way that serves the same purpose of providing inputs (X) and corresponding labels (y) for model training and evaluation.
+
+Trainer (Training Loop):
+
+The training process in this notebook involves a custom linear regression model (LinearRegressionModel) which is an nn.Module subclass. The training loop, although not explicitly named "trainer," encompasses the steps where the model learns from the data. This involves defining an optimizer (e.g., Stochastic Gradient Descent) and a loss function (e.g., Mean Absolute Error). During training, the model iterates through the training data, calculates the loss between predictions and actual values, and then updates its parameters (weights and biases) using backpropagation and the optimizer to minimize this loss. The forward pass of the model is defined within the forward method of the LinearRegressionModel class, which computes self.weights * x + self.bias.
+
 Installation and Setup
 To run these notebooks, you'll need to have Python and Jupyter installed, along with the necessary libraries.
 
